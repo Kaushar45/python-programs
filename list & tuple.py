@@ -1,63 +1,62 @@
-# # List
-# # A built-in data type that lets us create mutable sequences of values.
-# marks=[85, 90, 78, 92, 88]
-# print(marks)
-# print(type(marks)) # list
-# print(marks[0]) # 85
-# print(marks[1]) # 90
-# print(len(marks)) # 5
+# List
+# A built-in data type that lets us create mutable sequences of values.
+marks=[85, 90, 78, 92, 88]
+print(marks)
+print(type(marks)) # list
+print(marks[0]) # 85
+print(marks[1]) # 90
+print(len(marks)) # 5
 
-# # string are immutable
-# # list are mutable
-# # mutable means we can change the value of list
-# # immutable means we cannot change the value of string
+# string are immutable
+# list are mutable
+# mutable means we can change the value of list
+# immutable means we cannot change the value of string
 
-# # str="hello"
-# # print(str[0]) # h
-# # str[0]='H' # error
+# str="hello"
+# print(str[0]) # h
+# str[0]='H' # error
 
-# student=["kaushar", 20, 85.5, True]
-# print(student)
-# student[0]='hello'
-# print(student)
+student=["kaushar", 20, 85.5, True]
+print(student)
+student[0]='hello'
+print(student)
 
 
-# # list slicing
+# list slicing
 
-# # list_name[starting index : ending index]
-# marks = [85, 90, 78, 92, 88]
-# print(marks[1:3]) # [90, 78]
-# print(marks[2:]) # [78, 92, 88]
-# print(marks[:3]) # [85, 90, 78]
-# print(marks[-3:-1]) # [78, 92]
-# print(marks[-3:]) # [78, 92, 88]
+# list_name[starting index : ending index]
+marks = [85, 90, 78, 92, 88]
+print(marks[1:3]) # [90, 78]
+print(marks[2:]) # [78, 92, 88]
+print(marks[:3]) # [85, 90, 78]
+print(marks[-3:-1]) # [78, 92]
+print(marks[-3:]) # [78, 92, 88]
 
-# # list methods
+# list methods
+list = [ 4,2, 3 ]
+list.append(1) # adds one element at the end of the list 
+print(list) # [4, 2, 3, 1]
 
-# list = [ 4,2, 3 ]
-# list.append(1) # adds one element at the end of the list 
-# print(list) # [4, 2, 3, 1]
+list.sort() # sorts the list in ascending order 
+print(list) # [1, 2, 3, 4]
 
-# list.sort() # sorts the list in ascending order 
-# print(list) # [1, 2, 3, 4]
+list.reverse() # reverses the list 
+print(list) # [4, 3, 2, 1]
 
-# list.reverse() # reverses the list 
-# print(list) # [4, 3, 2, 1]
+list.sort(reverse=True) # sorts the list in descending order 
+print(list) # [4, 3, 2, 1]
 
-# list.sort(reverse=True) # sorts the list in descending order 
-# print(list) # [4, 3, 2, 1]
+#list.insert(idx, el)  inserts the element at the given index
+list.insert(2, 3) # inserts the element at the beginning of the list
+print(list) # [4, 3, 3, 2, 1]
 
-# #list.insert(idx, el)  inserts the element at the given index
-# list.insert(2, 3) # inserts the element at the beginning of the list
-# print(list) # [4, 3, 3, 2, 1]
+list.remove(3) # removes the first occurrence of the element from the list
+print(list) # [4, 3, 2, 1]
 
-# list.remove(3) # removes the first occurrence of the element from the list
-# print(list) # [4, 3, 2, 1]
-
-# list.pop() # removes the last element from the list
-# print(list) # [4, 3, 2]
-# list.pop(1) # removes the element at the given index
-# print(list) # [4, 2]
+list.pop() # removes the last element from the list
+print(list) # [4, 3, 2]
+list.pop(1) # removes the element at the given index
+print(list) # [4, 2]
 
 # Tuple-----------------------------------
 # A build in data type that lets us create immutable sequences of values.
