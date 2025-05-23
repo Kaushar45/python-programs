@@ -6,6 +6,7 @@ print(type(marks)) # list
 print(marks[0]) # 85
 print(marks[1]) # 90
 print(len(marks)) # 5
+print(marks[:3]) # [85, 90, 78]
 
 # string are immutable
 # list are mutable
