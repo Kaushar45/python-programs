@@ -55,3 +55,22 @@ if not found:
 # Continue : terminate execution in the current iteration & continue execution
 #  of the loop with the next iteration.
  
+#  Loops in Python
+#  Loops are used used for sequential traversal. For traversing list, string, tuples etc.
+#  for Loops
+#  for el in list: 
+ 
+list=[1,2,3]
+for el in list : 
+    print(el)
+
+# for Loop with else
+# for el in list: 
+# #some work
+#  else: 
+# #work when loop ends 
+
+for el in list : 
+    print(el)
+else:
+    print("End")
