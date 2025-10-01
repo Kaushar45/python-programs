@@ -74,3 +74,37 @@ for el in list :
     print(el)
 else:
     print("End")
+
+tup = (1,2,3,4,5,78,987,9,0)
+for num in tup:
+    print(num)
+
+text = 'helloWorld'
+
+for char in text:
+    if(char =="W"):
+        print("W found")
+        break
+    print(char)
+else:
+    print("End")
+
+# practice
+# 1. print the element of the following list in using a loop
+
+nums = [ 1,4,9,16,25,49,64,81,100]
+
+for num in nums:
+  print(num)  
+
+# 2. Search for a number x in this tuple using loop 
+
+numbers = (1, 4, 9, 16, 25, 49, 64, 81, 100, 16)
+x = 16
+idx = 0
+
+for num in numbers:
+    if num == x:
+        print("Found at index", idx)
+    idx += 1
+
