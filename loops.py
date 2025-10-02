@@ -108,3 +108,66 @@ for num in numbers:
         print("Found at index", idx)
     idx += 1
 
+# Range()
+# Range functions returns a sequence of numbers, starting from 0 by default, and increments by 1(by default), and stops before a specified numbers.
+
+# range(start?,stop,step?)    
+
+print(range(5)) # range(0,5)
+
+seq = range(5)
+print(seq[0]) #0
+print(seq[1]) #1
+print(seq[2]) #2
+print(seq[3]) #3
+print(seq[4]) #4
+
+for i in seq:
+    print(i) 
+
+for i in range(11): #range(stop)
+    print(i)    
+
+for i in range(3,11,3): #range(start?,stop,step?)
+    print(i)
+
+# practice
+# print numbers from 1 to 100
+for num in range(1,101,1):
+    print(num)
+
+# print numbers from 100 to 1
+for num in range(100,0,-1):
+    print(num)
+
+# print multipliction table of a number n
+n= int(input("Enter Number: "))
+for table in range(n,n*11,n):
+    print(table)
+
+# pass statement
+# pass is a null statement that does nothing. It is used as a placeholder for future code
+for el in range(11):
+    pass
+if el>5:
+    pass
+print("some work")
+
+# practice
+# 1. write a program find the sum of first n numbers (using while)
+
+n = 5
+sum = 0
+i = 1
+while i <= n:
+    sum += i
+    i += 1
+print(sum)  # Output: 15
+
+# 2. write a program find the factorial of first n numbers. (using for) 
+
+num = 5
+fact = 1
+for i in range(1, num + 1):
+    fact *= i
+    print(f"Factorial of {i} is {fact}")
