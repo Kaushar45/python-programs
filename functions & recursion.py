@@ -56,3 +56,45 @@ def converter(usd_val):
    print(usd_val,"USD =", inr_val,"INR" )
 
 converter(100)  
+
+# Recursion- when a function calls itself repeatedly
+
+# Recursive function
+def show(n):
+    if ( n == 0): # base case
+        return
+    print(n)
+    show(n-1)
+show(5)
+
+def fact(n):
+    if (n==0 or n==1):
+        return 1
+    else:
+        return n* fact(n-1)
+    
+print(fact(5))
+print(fact(0))  
+
+#  Practice
+# 1. Write a recursive function to calculate the sum of first n natural numbers. 
+  
+def sum(n):
+    if n == 0:
+        return 0
+    return sum(n - 1) + n
+
+print(sum(5))
+
+# 2. Write a recursive function to print all elements in a list
+#    Hint : use list & index as parameters.
+
+def print_list(list,idx):
+    if (idx == len(list)):
+        return
+    print(list[idx])
+    print_list(list,idx+1)
+
+lst = [3,4,556,8,97,79,65]
+ 
+print_list(lst,3)
